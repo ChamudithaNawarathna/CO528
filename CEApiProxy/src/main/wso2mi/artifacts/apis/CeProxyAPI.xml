@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/ce" name="CeProxyAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+    <resource methods="GET" uri-template="/students">
+        <inSequence>
+            <call description="Get students data from the given endpoint">
+                <endpoint key="StudentsEndpoint"/>
+            </call>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+    <resource methods="GET" uri-template="/projects">
+        <inSequence>
+            <call description="Get project data from the given endpoint">
+                <endpoint key="ProjectsEndpoint"/>
+            </call>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+</api>
