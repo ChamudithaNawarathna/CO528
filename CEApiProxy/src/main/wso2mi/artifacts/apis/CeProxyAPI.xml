@@ -2,6 +2,10 @@
 <api context="/ce" name="CeProxyAPI" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET" uri-template="/">
         <inSequence>
+            <log category="INFO" logMessageID="true" logFullPayload="false">
+                <message></message>
+            </log>
+            <respond/>
         </inSequence>
         <faultSequence>
         </faultSequence>
@@ -11,6 +15,10 @@
             <call description="Get students data from the given endpoint">
                 <endpoint key="StudentsEndpoint"/>
             </call>
+            <log category="INFO" logMessageID="true" logFullPayload="false">
+                <message></message>
+            </log>
+            <respond/>
         </inSequence>
         <faultSequence>
         </faultSequence>
@@ -20,6 +28,10 @@
             <call description="Get project data from the given endpoint">
                 <endpoint key="ProjectsEndpoint"/>
             </call>
+            <log category="INFO" logMessageID="true" logFullPayload="false">
+                <message></message>
+            </log>
+            <respond/>
         </inSequence>
         <faultSequence>
         </faultSequence>

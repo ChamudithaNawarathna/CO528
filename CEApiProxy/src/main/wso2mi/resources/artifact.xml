@@ -21,6 +21,54 @@
       <file>students-mapper_outputSchema.json</file>
       <path>/_system/governance/mi-resources/datamapper/students-mapper</path>
       <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_reseach-group-vision-publication-mapper_reseach-group-vision-publication-mapper_dmc" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>reseach-group-vision-publication-mapper.dmc</file>
+      <path>/_system/governance/mi-resources/datamapper/reseach-group-vision-publication-mapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_reseach-group-vision-publication-mapper_reseach-group-vision-publication-mapper_inputSchema_json" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>reseach-group-vision-publication-mapper_inputSchema.json</file>
+      <path>/_system/governance/mi-resources/datamapper/reseach-group-vision-publication-mapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_reseach-group-vision-publication-mapper_reseach-group-vision-publication-mapper_outputSchema_json" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>reseach-group-vision-publication-mapper_outputSchema.json</file>
+      <path>/_system/governance/mi-resources/datamapper/reseach-group-vision-publication-mapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_research-group-details-mapper_research-group-details-mapper_dmc" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>research-group-details-mapper.dmc</file>
+      <path>/_system/governance/mi-resources/datamapper/research-group-details-mapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_research-group-details-mapper_research-group-details-mapper_inputSchema_json" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>research-group-details-mapper_inputSchema.json</file>
+      <path>/_system/governance/mi-resources/datamapper/research-group-details-mapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_research-group-details-mapper_research-group-details-mapper_outputSchema_json" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>research-group-details-mapper_outputSchema.json</file>
+      <path>/_system/governance/mi-resources/datamapper/research-group-details-mapper</path>
+      <mediaType>text/plain</mediaType>
       <properties/>
     </item>
   </artifact>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api name="ResearchGroup-Vision" context="/research-groups/v1/vision/" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <call description="Get research group data from the given endpoint">
+                <endpoint key="PortalResearchGroup-Vision"/>
+            </call>
+            <datamapper config="resources:datamapper/research-group-details-mapper/research-group-details-mapper.dmc" inputSchema="resources:datamapper/research-group-details-mapper/research-group-details-mapper_inputSchema.json" outputSchema="resources:datamapper/research-group-details-mapper/research-group-details-mapper_outputSchema.json"/>
+            <log category="INFO" logMessageID="true" logFullPayload="false">
+                <message></message>
+            </log>
+            <respond/>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+    <resource methods="GET" uri-template="/publications">
+        <inSequence>
+            <call description="Filter publications by research group from the given endpoint">
+                <endpoint key="PublicationsFilterByResearchGroupsEndpoint"/>
+            </call>
+            <datamapper config="resources:datamapper/reseach-group-vision-publication-mapper/reseach-group-vision-publication-mapper.dmc" inputSchema="resources:datamapper/reseach-group-vision-publication-mapper/reseach-group-vision-publication-mapper_inputSchema.json" outputSchema="resources:datamapper/reseach-group-vision-publication-mapper/reseach-group-vision-publication-mapper_outputSchema.json" description="Map vision publications"/>
+            <log category="INFO" logMessageID="true" logFullPayload="false">
+                <message></message>
+            </log>
+            <respond/>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+</api>
